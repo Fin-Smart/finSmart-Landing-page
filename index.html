@@ -6,6 +6,10 @@
   <title>Privacy Policy | FinSmart Legal</title>
   <meta name="description" content="Privacy policy and legal policies for FinSmart, the smart money app for South Africans: what we collect, how Gmail and SMS data is used, AI processing, and how to delete your data.">
   <meta name="theme-color" content="#0082FE">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FinSmart">
+  <meta property="og:title" content="FinSmart Legal: Privacy, Terms, Google & SMS Data, Account Deletion">
+  <meta property="og:description" content="How FinSmart handles your data: what we collect, how Gmail and SMS data is used, AI processing, and how to delete your account.">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="apple-touch-icon" href="/assets/icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +21,7 @@
   <div class="page">
     <header class="masthead">
       <div class="wrap topbar">
-        <a class="brand" href="REPLACE_PROMO_URL">
+        <a class="brand" href="https://finsmart.co.za">
           <img class="brand-icon" src="/assets/icon-180.png" alt="" width="32" height="32">
           FinSmart<span>Legal</span>
         </a>
@@ -45,13 +49,16 @@
 
         <div class="sidebar-contact">
           <p class="sidebar-label">Questions</p>
-          <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a>
+          <a href="mailto:oscar@finsmart.co.za">oscar@finsmart.co.za</a>
         </div>
       </aside>
 
       <main class="doc">
         <article class="doc-article" id="doc-content">
-          <!-- Active document rendered by JS -->
+          <noscript>
+            <p class="doc-intro">Please enable JavaScript to read the FinSmart legal documents.</p>
+            <p class="doc-paragraph">For a copy of any policy, or to request account deletion, email <a href="mailto:oscar@finsmart.co.za">oscar@finsmart.co.za</a>.</p>
+          </noscript>
         </article>
 
         <div class="pager" id="pager-nav">
@@ -62,8 +69,8 @@
 
     <footer class="footer">
       <div class="wrap footer-top">
-        <p class="footer-lead">Questions about these policies? Email <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a></p>
-        <a class="footer-site" href="REPLACE_PROMO_URL">finsmart.app →</a>
+        <p class="footer-lead">Questions about these policies? Email <a href="mailto:oscar@finsmart.co.za">oscar@finsmart.co.za</a></p>
+        <a class="footer-site" href="https://finsmart.co.za">finsmart.co.za →</a>
       </div>
       <p class="footer-wordmark" aria-hidden="true">FinSmart</p>
       <div class="wrap footer-meta">
@@ -74,6 +81,9 @@
   </div>
 
   <script>
+    const CONTACT_EMAIL = "oscar@finsmart.co.za";
+    const EMAIL_LINK = `<a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>`;
+
     const DOCUMENTS = [
       {
         id: "privacy",
@@ -183,7 +193,7 @@
               "FinSmart partners with reputable infrastructure providers who process data strictly under compliant data processing agreements:"
             ],
             bullets: [
-              "<strong>Google Firebase & Google Cloud:</strong> Provides Authentication, Cloud Firestore database, Cloud Storage, App Check attestation, and Gemini AI processing under <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">Google's Enterprise Privacy Terms</a>.",
+              "<strong>Google Firebase & Google Cloud:</strong> Provides Authentication, Cloud Firestore database, Cloud Storage, App Check attestation, and Gemini AI processing under <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">Google's Privacy Policy</a>.",
               "<strong>Google Sign-In & Apple ID:</strong> For federated single sign-on authentication.",
               "<strong>Native Speech Recognition Services:</strong> Provided by Apple iOS or Google Android to transcribe spoken queries on device when you use voice input.",
               "<strong>Expo (60 East Technologies):</strong> For delivering over-the-air application patches and updates."
@@ -202,7 +212,7 @@
             paragraphs: [
               "We guarantee complete self-service data deletion. To delete your account and all associated records, navigate in the app to: <strong>Profile → Delete account</strong>.",
               "Executing this action triggers immediate and irreversible deletion: your cloud budgets, spending records, and auth accounts are purged; local chats and email caches are cleared; and third-party OAuth tokens granted to FinSmart are automatically revoked.",
-              "If you are unable to access the mobile application, send an account deletion request from your registered email address to <a href=\"mailto:REPLACE_WITH_YOUR_EMAIL\">REPLACE_WITH_YOUR_EMAIL</a>, and our administration team will process your request within 7 business days."
+              `If you are unable to access the mobile application, send an account deletion request from your registered email address to ${EMAIL_LINK}, and our administration team will process your request within 7 business days.`
             ]
           },
           {
@@ -229,7 +239,7 @@
           {
             title: "Children's privacy",
             paragraphs: [
-              "FinSmart is designed and intended exclusively for individuals aged 18 years and older. We do not knowingly solicit or collect personal information from minors. If you discover that a minor has created an account, notify us at <a href=\"mailto:REPLACE_WITH_YOUR_EMAIL\">REPLACE_WITH_YOUR_EMAIL</a> and we will delete the account immediately."
+              `FinSmart is designed and intended exclusively for individuals aged 18 years and older. We do not knowingly solicit or collect personal information from minors. If you discover that a minor has created an account, notify us at ${EMAIL_LINK} and we will delete the account immediately.`
             ]
           },
           {
@@ -242,7 +252,7 @@
             title: "Contact us",
             paragraphs: [
               "If you have questions, complaints, or inquiries regarding your personal information or this Privacy Policy, please contact our Information Officer:",
-              "<strong>FinTitans</strong><br>Email: <a href=\"mailto:REPLACE_WITH_YOUR_EMAIL\">REPLACE_WITH_YOUR_EMAIL</a><br>Republic of South Africa"
+              `<strong>FinTitans</strong><br>Email: ${EMAIL_LINK}<br>Republic of South Africa`
             ]
           }
         ]
@@ -328,7 +338,7 @@
           {
             title: "Contact",
             paragraphs: [
-              "For inquiries concerning these Terms & Conditions, please contact: <a href=\"mailto:REPLACE_WITH_YOUR_EMAIL\">REPLACE_WITH_YOUR_EMAIL</a>."
+              `For inquiries concerning these Terms & Conditions, please contact: ${EMAIL_LINK}.`
             ]
           }
         ]
@@ -378,6 +388,12 @@
               "You can revoke Gmail access at any moment via your <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\" rel=\"noopener\">Google Account Security page</a>.",
               "You can revoke SMS permissions at any moment by setting any other messaging app as your default SMS handler in Android Settings → Apps → Default Apps."
             ]
+          },
+          {
+            title: "Contact",
+            paragraphs: [
+              `For questions about how FinSmart handles Google user data or SMS messages, please contact: ${EMAIL_LINK}.`
+            ]
           }
         ]
       },
@@ -396,7 +412,7 @@
             "Inside the FinSmart mobile app, go to Profile → Delete account.",
             "All cloud budgets, category configurations, spending history, and token logs are immediately erased from Cloud Firestore.",
             "All local device caches (chats, emails, preferences) are deleted on your device.",
-            "You can also email REPLACE_WITH_YOUR_EMAIL if you have already uninstalled the app."
+            `You can also email ${EMAIL_LINK} if you have already uninstalled the app.`
           ]
         },
         sections: [
@@ -417,7 +433,7 @@
           {
             title: "Manual deletion requests",
             paragraphs: [
-              "If you have already removed the FinSmart application from your device and cannot reinstall it, you may submit a manual deletion request by sending an email from your registered address to <a href=\"mailto:REPLACE_WITH_YOUR_EMAIL\">REPLACE_WITH_YOUR_EMAIL</a> with the subject line <code>Account Deletion Request</code>.",
+              `If you have already removed the FinSmart application from your device and cannot reinstall it, you may submit a manual deletion request by sending an email from your registered address to <a href="mailto:${CONTACT_EMAIL}?subject=Account%20Deletion%20Request">${CONTACT_EMAIL}</a> with the subject line <code>Account Deletion Request</code>.`,
               "Our operations team will verify account ownership and execute the complete purge within 7 business days, followed by a written confirmation of completion."
             ]
           },
@@ -432,57 +448,65 @@
     ];
 
     // State & Routing
-    function getActiveDocId() {
-      const hash = window.location.hash.replace(/^#/, "");
-      const found = DOCUMENTS.find(d => d.id === hash);
-      return found ? found.id : DOCUMENTS[0].id;
+    // Hashes are either a document id (#terms) or a section id (#privacy-03).
+    const pad = n => String(n).padStart(2, "0");
+    const sectionId = (docId, idx) => `${docId}-${pad(idx + 1)}`;
+
+    function parseHash() {
+      const hash = decodeURIComponent(window.location.hash.slice(1));
+      const doc = DOCUMENTS.find(d => d.id === hash);
+      if (doc) return { doc, section: null };
+
+      const match = hash.match(/^(.+)-(\d{2})$/);
+      const parent = match && DOCUMENTS.find(d => d.id === match[1]);
+      if (parent) return { doc: parent, section: hash };
+
+      return { doc: DOCUMENTS[0], section: null };
     }
 
-    function renderNav(activeId) {
-      const totalDocs = String(DOCUMENTS.length).padStart(2, "0");
-
+    function renderNav(activeDoc) {
       // Sidebar
       const sidebarContainer = document.getElementById("sidebar-nav");
       sidebarContainer.innerHTML = DOCUMENTS.map((doc, idx) => {
-        const num = String(idx + 1).padStart(2, "0");
-        const isActive = doc.id === activeId;
+        const isActive = doc === activeDoc;
+        const toc = isActive ? `
+          <ol class="sidebar-toc" aria-label="On this page">
+            ${doc.sections.map((sec, i) => `
+              <li><a href="#${sectionId(doc.id, i)}" data-section="${sectionId(doc.id, i)}">${sec.title}</a></li>
+            `).join("")}
+          </ol>
+        ` : "";
         return `
-          <button type="button" class="sidebar-item ${isActive ? 'is-active' : ''}" data-id="${doc.id}">
-            <span class="sidebar-num">${num}</span>
+          <a class="sidebar-item ${isActive ? 'is-active' : ''}" href="#${doc.id}" ${isActive ? 'aria-current="page"' : ''}>
+            <span class="sidebar-num">${pad(idx + 1)}</span>
             <span>${doc.fullLabel}</span>
-          </button>
+          </a>
+          ${toc}
         `;
       }).join("");
 
       // Mobile Tabs
       const tabContainer = document.getElementById("tab-nav");
       tabContainer.innerHTML = DOCUMENTS.map((doc, idx) => {
-        const num = String(idx + 1).padStart(2, "0");
-        const isActive = doc.id === activeId;
+        const isActive = doc === activeDoc;
         return `
-          <button type="button" class="doc-tab ${isActive ? 'is-active' : ''}" data-id="${doc.id}">
-            <span class="doc-tab-num">${num}</span>
+          <a class="doc-tab ${isActive ? 'is-active' : ''}" href="#${doc.id}" ${isActive ? 'aria-current="page"' : ''}>
+            <span class="doc-tab-num">${pad(idx + 1)}</span>
             ${doc.label}
-          </button>
+          </a>
         `;
       }).join("");
 
-      // Attach event listeners
-      document.querySelectorAll("[data-id]").forEach(btn => {
-        btn.addEventListener("click", () => {
-          const targetId = btn.getAttribute("data-id");
-          if (targetId && targetId !== window.location.hash.replace(/^#/, "")) {
-            window.location.hash = targetId;
-          }
-        });
-      });
+      const activeTab = tabContainer.querySelector(".is-active");
+      if (activeTab) {
+        tabContainer.scrollLeft = activeTab.offsetLeft - (tabContainer.clientWidth - activeTab.offsetWidth) / 2;
+      }
     }
 
-    function renderDoc(activeId) {
-      const activeIdx = DOCUMENTS.findIndex(d => d.id === activeId);
-      const doc = DOCUMENTS[activeIdx];
-      const totalDocs = String(DOCUMENTS.length).padStart(2, "0");
-      const currentDocNum = String(activeIdx + 1).padStart(2, "0");
+    function renderDoc(doc) {
+      const activeIdx = DOCUMENTS.indexOf(doc);
+      const totalDocs = pad(DOCUMENTS.length);
+      const currentDocNum = pad(activeIdx + 1);
 
       // Update Masthead
       document.getElementById("doc-kicker").textContent = `Document ${currentDocNum} of ${totalDocs}`;
@@ -514,13 +538,13 @@
       }
 
       // Sections
-      const totalSec = String(doc.sections.length).padStart(2, "0");
+      const totalSec = pad(doc.sections.length);
       doc.sections.forEach((sec, idx) => {
-        const secNum = String(idx + 1).padStart(2, "0");
+        const id = sectionId(doc.id, idx);
         html += `
-          <section class="doc-section" id="${doc.id}-${secNum}">
-            <p class="doc-section-num">${secNum} / ${totalSec}</p>
-            <h2 class="doc-section-title">${sec.title}</h2>
+          <section class="doc-section" id="${id}" aria-labelledby="${id}-title">
+            <a class="doc-section-num" href="#${id}" title="Link to this section">${pad(idx + 1)} / ${totalSec}</a>
+            <h2 class="doc-section-title" id="${id}-title">${sec.title}</h2>
         `;
 
         if (sec.paragraphs) {
@@ -586,6 +610,9 @@
       });
 
       container.innerHTML = html;
+      container.classList.remove("is-entering");
+      void container.offsetWidth;
+      container.classList.add("is-entering");
 
       // Pager
       const prevDoc = DOCUMENTS[activeIdx - 1];
@@ -594,42 +621,59 @@
 
       pagerContainer.innerHTML = `
         ${prevDoc ? `
-          <button type="button" class="pager-link" data-id="${prevDoc.id}">
+          <a class="pager-link" href="#${prevDoc.id}">
             <span class="pager-label">← Previous</span>
             <span class="pager-title">${prevDoc.fullLabel}</span>
-          </button>
+          </a>
         ` : `<span></span>`}
 
         ${nextDoc ? `
-          <button type="button" class="pager-link pager-next" data-id="${nextDoc.id}">
+          <a class="pager-link pager-next" href="#${nextDoc.id}">
             <span class="pager-label">Next →</span>
             <span class="pager-title">${nextDoc.fullLabel}</span>
-          </button>
+          </a>
         ` : `<span></span>`}
       `;
-
-      // Attach pager listeners
-      pagerContainer.querySelectorAll("[data-id]").forEach(btn => {
-        btn.addEventListener("click", () => {
-          const targetId = btn.getAttribute("data-id");
-          if (targetId) {
-            window.location.hash = targetId;
-          }
-        });
-      });
     }
 
+    // Highlights the sidebar entry for the section currently near the top of the viewport.
+    let sectionObserver = null;
+    function watchSections() {
+      if (sectionObserver) sectionObserver.disconnect();
+      const links = document.querySelectorAll(".sidebar-toc a");
+      if (!links.length || !("IntersectionObserver" in window)) return;
+
+      sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          links.forEach(link => link.classList.toggle("is-current", link.dataset.section === entry.target.id));
+        });
+      }, { rootMargin: "0px 0px -70% 0px" });
+
+      document.querySelectorAll(".doc-section").forEach(sec => sectionObserver.observe(sec));
+    }
+
+    let renderedDocId = null;
     function syncState() {
-      const activeId = getActiveDocId();
-      renderNav(activeId);
-      renderDoc(activeId);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      const { doc, section } = parseHash();
+
+      if (doc.id !== renderedDocId) {
+        renderedDocId = doc.id;
+        renderNav(doc);
+        renderDoc(doc);
+        watchSections();
+      }
+
+      const target = section && document.getElementById(section);
+      if (target) {
+        target.scrollIntoView({ block: "start" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
     }
 
     window.addEventListener("hashchange", syncState);
-    window.addEventListener("DOMContentLoaded", () => {
-      syncState();
-    });
+    syncState();
   </script>
 </body>
 </html>
