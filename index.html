@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Privacy Policy | FinSmart Legal</title>
+  <meta name="description" content="Privacy policy and legal policies for FinSmart, the smart money app for South Africans: what we collect, how Gmail and SMS data is used, AI processing, and how to delete your data.">
+  <meta name="theme-color" content="#0082FE">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <div class="wrap topbar">
+        <a class="brand" href="REPLACE_PROMO_URL">
+          <img class="brand-icon" src="/assets/icon-180.png" alt="" width="32" height="32">
+          FinSmart<span>Legal</span>
+        </a>
+        <span class="topbar-label">Legal · Updated October 2026</span>
+      </div>
+      <div class="wrap masthead-body">
+        <p class="masthead-kicker" id="doc-kicker">Document 01 of 04</p>
+        <h1 class="masthead-title" id="doc-title">Privacy Policy</h1>
+        <p class="masthead-subtitle" id="doc-subtitle">What we collect, how Gmail and SMS data is used, and how to delete your data</p>
+      </div>
+    </header>
+
+    <nav class="doc-tabs" aria-label="Legal documents">
+      <div class="wrap doc-tabs-inner" id="tab-nav">
+        <!-- Rendered by JS -->
+      </div>
+    </nav>
+
+    <div class="wrap shell">
+      <aside class="sidebar" aria-label="All documents">
+        <p class="sidebar-label">Documents</p>
+        <div id="sidebar-nav">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div class="sidebar-contact">
+          <p class="sidebar-label">Questions</p>
+          <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a>
+        </div>
+      </aside>
+
+      <main class="doc">
+        <article class="doc-article" id="doc-content">
+          <!-- Active document rendered by JS -->
+        </article>
+
+        <div class="pager" id="pager-nav">
+          <!-- Rendered by JS -->
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="wrap footer-top">
+        <p class="footer-lead">Questions about these policies? Email <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a></p>
+        <a class="footer-site" href="REPLACE_PROMO_URL">finsmart.app →</a>
+      </div>
+      <p class="footer-wordmark" aria-hidden="true">FinSmart</p>
+      <div class="wrap footer-meta">
+        <span>© 2026 FinSmart · FinTitans. All rights reserved.</span>
+        <span>Made in South Africa</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const DOCUMENTS = [
+      {
+        id: "privacy",
+        label: "Privacy",
+        fullLabel: "Privacy Policy",
+        subtitle: "What we collect, how Gmail and SMS data is used, and how to delete your data",
+        intro: [
+          "Effective 25 October 2026 · Applies to the FinSmart mobile app and website",
+          "FinSmart is committed to protecting your personal information under South Africa's Protection of Personal Information Act (POPIA). This policy explains what information we collect, why we need it, how we safeguard it, and how you maintain complete control over your data."
+        ],
+        summary: {
+          title: "The Short Version",
+          bullets: [
+            "You sign in with email, Google, or Apple. Your budgets and spending are saved to your account so they follow you across devices.",
+            "Gmail and SMS access are optional. Gmail is strictly read-only. You can turn either feature off at any time.",
+            "When you ask Smart Coach a question or ask it to review a suspicious message, that text is processed by Google's Gemini AI to generate the answer.",
+            "We never sell your data, display third-party advertisements, or use your Gmail or SMS content to train AI models.",
+            "You can permanently delete your account and associated data directly inside the app: Profile → Delete account."
+          ]
+        },
+        sections: [
+          {
+            title: "Who we are",
+            paragraphs: [
+              "FinSmart is a personal finance app for budgeting, money coaching, and scam awareness, built by FinTitans (“we”, “us”). We are the responsible party for your personal information under South Africa’s Protection of Personal Information Act (POPIA).",
+              "If you have any questions or require assistance regarding your personal data, you can reach our data compliance team via the contact details in section 14."
+            ]
+          },
+          {
+            title: "What we collect",
+            paragraphs: [
+              "We only collect information that is strictly necessary to provide and secure FinSmart's budgeting, scam detection, and coaching services."
+            ],
+            table: {
+              headers: ["Information", "Why", "Where it lives"],
+              rows: [
+                ["<strong>Account details.</strong> Email address, name, and profile photo (if shared by Google or Apple), plus a unique account ID.", "To create your account, sign you in, and isolate your data securely.", "Firebase Authentication"],
+                ["<strong>Budget data you enter.</strong> Budgets, categories, spending, income records, and currency preferences.", "To calculate budget limits, generate analytics, and render interactive charts.", "Cloud Firestore; currency preference stored on your device"],
+                ["<strong>Smart Coach usage.</strong> Daily token use and receipt records of token purchases.", "To enforce daily free token allowances and maintain accurate token balances.", "Cloud Firestore"],
+                ["<strong>Smart Coach chats.</strong> Messages, coaching advice, financial habits, and lesson progress.", "To preserve chat continuity and personalize coaching feedback.", "Stored exclusively on your device"],
+                ["<strong>Gmail messages</strong> (optional).", "To check incoming messages for financial scam patterns and display your financial inbox inside FinSmart.", "Fetched securely from Google when opened; up to 20 recent messages cached on device"],
+                ["<strong>SMS messages</strong> (optional, Android).", "To display your messages and perform local scam analysis on suspicious sender patterns.", "Device's local SMS store; never uploaded to external servers"],
+                ["<strong>Voice input</strong> (optional).", "To convert voice commands into text for Smart Coach.", "Processed in real time by your phone's operating system; audio recordings are not stored"],
+                ["<strong>Photos & Attachments</strong> (optional).", "Only media files you explicitly upload or attach to your profile.", "Firebase Storage"],
+                ["<strong>Device & security signals.</strong> Device integrity and App Check attestations.", "To verify that requests originate from the genuine, untampered FinSmart app and protect against abuse.", "Firebase App Check"]
+              ]
+            },
+            notes: "We never ask for your bank online login credentials, credit or debit card PINs, or South African National ID number, and FinSmart never executes fund transfers or moves money."
+          },
+          {
+            title: "Google user data and Gmail",
+            paragraphs: [
+              "Connecting Gmail is entirely optional. When you choose to connect Gmail, FinSmart requests a single permission scope from Google: read-only access to your Gmail messages (<code>gmail.readonly</code>). We cannot send emails, delete messages, modify drafts, or alter your mailbox."
+            ],
+            bulletsTitle: "What we do with your Gmail data:",
+            bullets: [
+              "Display your recent incoming emails conveniently inside the FinSmart app.",
+              "Perform an on-device scam check for common phishing patterns, advance-fee prize hoaxes, and suspicious payment or password requests.",
+              "If you explicitly ask Smart Coach to review an email, transmit the sender header, subject line, and initial snippet to Google's Gemini AI to produce an objective safety verdict.",
+              "Store a local cache of up to 20 recent emails on your device for fast offline loading. Signing out or deleting your account immediately clears this cache."
+            ],
+            subbulletsTitle: "What we do NOT do:",
+            subbullets: [
+              "We never store the full content of your emails on external FinSmart servers.",
+              "We never sell Google user data, share it with advertising networks, or transfer it to third parties except to fulfill core app features, comply with valid legal processes, or with your express consent.",
+              "We never use your Gmail data to train, tune, or improve generalized foundation or AI models.",
+              "No human at FinSmart reads your private emails, except when you explicitly provide an email snippet for technical customer support, in cases of security incident investigations, or as required by court order."
+            ],
+            footerParagraph: "FinSmart’s use and transfer of information received from Google APIs strictly complies with the <a href=\"https://developers.google.com/terms/api-services-user-data-policy\" target=\"_blank\" rel=\"noopener\">Google API Services User Data Policy</a>, including the Limited Use requirements. You can disconnect Gmail at any time in FinSmart Settings or revoke access via your <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\" rel=\"noopener\">Google Account Permissions</a>."
+          },
+          {
+            title: "SMS access on Android",
+            paragraphs: [
+              "To read and process text messages, the Android operating system requires FinSmart to be set as your default SMS application. FinSmart only prompts for this status if you opt into the messaging and SMS scam protection module."
+            ],
+            bullets: [
+              "Your text messages remain stored in your phone's native system database. We do not sync or upload your SMS chat history to our servers.",
+              "Heuristic scam detection runs locally on your device. An SMS snippet is only sent to Google's Gemini AI when you explicitly tap 'Review with Smart Coach'.",
+              "You can revert your default SMS handler to Google Messages or your phone's manufacturer app at any time via Android System Settings."
+            ]
+          },
+          {
+            title: "Smart Coach and AI",
+            paragraphs: [
+              "Smart Coach is powered by Google’s Gemini foundation models through Firebase AI Logic. When you initiate a chat conversation, generate a personalized budget plan, or request an evaluation of a suspicious message, FinSmart sends the pertinent query text to Google's AI endpoints to generate a response.",
+              "To make budget feedback meaningful, queries may include non-identifying aggregate summaries of your spending categories, monthly limits, and amounts spent.",
+              "Important: Smart Coach provides general financial education, budgeting frameworks, and safety guidelines. It does not provide regulated financial advisory services under South Africa's Financial Advisory and Intermediary Services (FAIS) Act, nor does it provide legal or tax advice. Always consult a certified financial planner for significant financial decisions. Never enter passwords, PINs, or ID numbers into coach chats."
+            ]
+          },
+          {
+            title: "How we use information",
+            paragraphs: [
+              "We process collected information solely for legitimate operational purposes:"
+            ],
+            bullets: [
+              "To deliver, operate, and enhance FinSmart's budgeting and scam detection features.",
+              "To authenticate your user session and maintain cloud budget synchronization across your authorized devices.",
+              "To calculate daily free AI coaching token allocations and process token package top-ups.",
+              "To defend against fraudulent activity, verify application integrity, and respond promptly to user support tickets.",
+              "To fulfill statutory compliance and legal duties under applicable South African laws."
+            ],
+            footerParagraph: "We do not sell personal information to brokers or third parties, and FinSmart contains zero third-party commercial advertisements."
+          },
+          {
+            title: "Who we share it with",
+            paragraphs: [
+              "FinSmart partners with reputable infrastructure providers who process data strictly under compliant data processing agreements:"
+            ],
+            bullets: [
+              "<strong>Google Firebase & Google Cloud:</strong> Provides Authentication, Cloud Firestore database, Cloud Storage, App Check attestation, and Gemini AI processing under <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">Google's Enterprise Privacy Terms</a>.",
+              "<strong>Google Sign-In & Apple ID:</strong> For federated single sign-on authentication.",
+              "<strong>Native Speech Recognition Services:</strong> Provided by Apple iOS or Google Android to transcribe spoken queries on device when you use voice input.",
+              "<strong>Expo (60 East Technologies):</strong> For delivering over-the-air application patches and updates."
+            ],
+            footerParagraph: "We may disclose records if subpoenaed by South African law enforcement or regulatory authorities. If FinSmart undergoes a corporate merger or acquisition, affected users will receive advance notification prior to data transfer."
+          },
+          {
+            title: "Where it is stored and how long",
+            paragraphs: [
+              "Account and budget records are hosted within Google Cloud secure data centers and may be stored across regions with enterprise safeguards equivalent to South African POPIA benchmarks.",
+              "We retain account records for as long as your account remains active. Device-cached data (including Smart Coach chat logs and cached email headers) persists only on your phone and is wiped whenever you clear app storage, log out, or delete your account."
+            ]
+          },
+          {
+            title: "Deleting your data",
+            paragraphs: [
+              "We guarantee complete self-service data deletion. To delete your account and all associated records, navigate in the app to: <strong>Profile → Delete account</strong>.",
+              "Executing this action triggers immediate and irreversible deletion: your cloud budgets, spending records, and auth accounts are purged; local chats and email caches are cleared; and third-party OAuth tokens granted to FinSmart are automatically revoked.",
+              "If you are unable to access the mobile application, send an account deletion request from your registered email address to <a href=\"mailto:REPLACE_WITH_YOUR_EMAIL\">REPLACE_WITH_YOUR_EMAIL</a>, and our administration team will process your request within 7 business days."
+            ]
+          },
+          {
+            title: "Security",
+            paragraphs: [
+              "We implement layered administrative, technical, and physical security measures to safeguard user data:"
+            ],
+            bullets: [
+              "End-to-end transport encryption utilizing modern TLS 1.3 cryptographic protocols.",
+              "Firestore granular security rules ensuring that authenticated users can only query and modify their own respective records.",
+              "Cryptographic Firebase App Check attestations verifying that API calls originate from untampered FinSmart binaries.",
+              "Zero permanent cloud storage of private SMS text bodies or Gmail message archives."
+            ]
+          },
+          {
+            title: "Your rights under POPIA",
+            paragraphs: [
+              "Under South Africa's Protection of Personal Information Act (POPIA), you possess distinct legal rights regarding your personal information:",
+              "You have the right to request confirmation of the data we hold regarding you, request a machine-readable copy, request rectification of inaccurate records, or demand full erasure.",
+              "You may also withdraw consent or object to specific processing channels (such as disconnecting Gmail access or resetting default SMS permissions) at any point.",
+              "If you believe our processing infringes your statutory rights, you have the legal right to lodge a formal complaint with the Information Regulator of South Africa at <a href=\"https://inforegulator.org.za\" target=\"_blank\" rel=\"noopener\">inforegulator.org.za</a>."
+            ]
+          },
+          {
+            title: "Children's privacy",
+            paragraphs: [
+              "FinSmart is designed and intended exclusively for individuals aged 18 years and older. We do not knowingly solicit or collect personal information from minors. If you discover that a minor has created an account, notify us at <a href=\"mailto:REPLACE_WITH_YOUR_EMAIL\">REPLACE_WITH_YOUR_EMAIL</a> and we will delete the account immediately."
+            ]
+          },
+          {
+            title: "Changes to this policy",
+            paragraphs: [
+              "We may revise this Privacy Policy periodically to reflect feature expansions, evolving security measures, or legislative amendments. Material changes will be highlighted via in-app notifications and updated with a revised effective timestamp at the top of this document."
+            ]
+          },
+          {
+            title: "Contact us",
+            paragraphs: [
+              "If you have questions, complaints, or inquiries regarding your personal information or this Privacy Policy, please contact our Information Officer:",
+              "<strong>FinTitans</strong><br>Email: <a href=\"mailto:REPLACE_WITH_YOUR_EMAIL\">REPLACE_WITH_YOUR_EMAIL</a><br>Republic of South Africa"
+            ]
+          }
+        ]
+      },
+      {
+        id: "terms",
+        label: "Terms",
+        fullLabel: "Terms & Conditions",
+        subtitle: "Please read before using the FinSmart mobile application and services",
+        intro: [
+          "Effective 25 October 2026 · FinTitans South Africa",
+          "These Terms & Conditions (\"Terms\") govern your access to and use of the FinSmart mobile application, website, and related financial budgeting tools (collectively, the \"Service\"). By downloading, registering, or using FinSmart, you agree to these Terms. If you disagree, do not use the Service."
+        ],
+        summary: {
+          title: "Key Takeaways",
+          bullets: [
+            "FinSmart is a personal budgeting and coaching utility. It is NOT a registered financial advisory or banking institution.",
+            "AI coaching responses from Smart Coach are educational aids and should never replace qualified professional financial or legal consultation.",
+            "You are responsible for safeguarding your device access credentials.",
+            "FinSmart does not transfer funds, take deposits, or directly access bank accounts."
+          ]
+        },
+        sections: [
+          {
+            title: "About FinSmart",
+            paragraphs: [
+              "FinSmart is an independent software application created and operated by FinTitans (\"we\", \"us\", \"our\"). The app offers personal budgeting calculators, category expense tracking, scam heuristic warnings, and automated AI coaching assistants."
+            ]
+          },
+          {
+            title: "No regulated financial advice",
+            paragraphs: [
+              "FinSmart and its Smart Coach module are software tools designed for informational and budgeting educational purposes only. Neither FinTitans nor FinSmart provides registered financial advisory, investment management, tax, or legal consulting services under South Africa's Financial Advisory and Intermediary Services Act (FAIS) or the National Credit Act (NCA).",
+              "You acknowledge that any financial metrics, estimates, or AI generated tips are automated suggestions and do not constitute formal financial endorsements. You remain solely responsible for your financial decisions."
+            ]
+          },
+          {
+            title: "User accounts and eligibility",
+            paragraphs: [
+              "You must be at least 18 years old and legally competent to enter into binding agreements in South Africa to register for an account.",
+              "You agree to provide accurate information when registering via email, Google Sign-In, or Sign in with Apple. You must take reasonable measures to maintain the confidentiality of your mobile device and authentication accounts."
+            ]
+          },
+          {
+            title: "Smart Coach tokens & purchases",
+            paragraphs: [
+              "FinSmart provides registered users with an allocated daily quota of free Smart Coach tokens. Additional token packages may be acquired as in-app purchases.",
+              "Token balances are tied to your account for in-app interaction and have no real-world cash value, cannot be redeemed for fiat currency, and are non-transferable."
+            ]
+          },
+          {
+            title: "Permissions and phone access",
+            paragraphs: [
+              "FinSmart allows you to optionally grant read-only Gmail access or Android default SMS handler status to enable automated scam detection heuristics.",
+              "You retain the right to disable or revoke these permissions at any time via in-app settings or your operating system's settings without forfeiting access to core budgeting features."
+            ]
+          },
+          {
+            title: "Acceptable use",
+            paragraphs: [
+              "You agree not to reverse engineer, decompile, or attempt to extract source code from FinSmart; not to use automated scripts to scrape or overload our API endpoints; and not to abuse or attempt to compromise Firebase App Check security verifications."
+            ]
+          },
+          {
+            title: "Intellectual property",
+            paragraphs: [
+              "All trademarks, logos, visual layouts, icons, source code, and software designs associated with FinSmart remain the exclusive property of FinTitans. You receive a limited, revocable, non-exclusive license to use the app for personal, non-commercial purposes."
+            ]
+          },
+          {
+            title: "Disclaimer of warranties and liability",
+            paragraphs: [
+              "The Service is provided on an 'as-is' and 'as-available' basis without warranties of any kind. While we strive for continuous accuracy, FinTitans does not guarantee that calculations, scam detections, or AI outputs will be error-free or uninterrupted.",
+              "To the maximum extent permissible under South African law, FinTitans will not be liable for any indirect, incidental, or consequential damages resulting from reliance on the application or coaching output."
+            ]
+          },
+          {
+            title: "Governing law & jurisdiction",
+            paragraphs: [
+              "These Terms are governed by and construed in accordance with the laws of the Republic of South Africa. Any disputes arising in connection with these Terms shall be subject to the exclusive jurisdiction of the South African courts."
+            ]
+          },
+          {
+            title: "Contact",
+            paragraphs: [
+              "For inquiries concerning these Terms & Conditions, please contact: <a href=\"mailto:REPLACE_WITH_YOUR_EMAIL\">REPLACE_WITH_YOUR_EMAIL</a>."
+            ]
+          }
+        ]
+      },
+      {
+        id: "google-sms",
+        label: "Google & SMS",
+        fullLabel: "Google & SMS Data Policy",
+        subtitle: "Technical disclosures regarding read-only Gmail integration, Android SMS handling, and AI analysis",
+        intro: [
+          "Effective 25 October 2026 · Technical Data Disclosure",
+          "This dedicated disclosure outlines how FinSmart handles sensitive device and account integrations, complying with Google API Services User Data Policy (including Limited Use) and Android SMS Developer Policies."
+        ],
+        sections: [
+          {
+            title: "Gmail Read-Only Scope (gmail.readonly)",
+            paragraphs: [
+              "FinSmart requests strictly the <code>https://www.googleapis.com/auth/gmail.readonly</code> OAuth scope. This permission is restricted to viewing message metadata and email content.",
+              "FinSmart has zero capability to compose new emails, send outgoing messages, delete mail, modify existing tags, or access Google Drive or other Google products."
+            ]
+          },
+          {
+            title: "On-device processing & caching",
+            paragraphs: [
+              "When you view your inbox in FinSmart, messages are retrieved live via Google's secure OAuth endpoints. FinSmart keeps a temporary rolling cache of up to 20 recent messages in encrypted local device storage for rapid rendering.",
+              "FinSmart's backend servers never store, mirror, or harvest the text of your emails. Signing out of FinSmart or deleting your account immediately flushes this local cache."
+            ]
+          },
+          {
+            title: "Android SMS default app requirements",
+            paragraphs: [
+              "On Android, reading and reviewing incoming text messages requires an app to be registered as the default SMS handler. FinSmart asks for this role solely to power the scam warning module and offline SMS inbox.",
+              "All SMS data resides in Android's native on-device SQLite database. We do not transmit your SMS history to our servers."
+            ]
+          },
+          {
+            title: "Scam evaluation and Gemini AI",
+            paragraphs: [
+              "Heuristic scam checks (such as known fraudulent shortcodes and common phishing keywords) execute 100% locally on your device without sending data anywhere.",
+              "If you encounter a suspicious transaction alert or prize notice and tap 'Review with Smart Coach', only the specific snippet under review is securely transmitted to Google Gemini via Firebase AI Logic to return an explanation of the risk.",
+              "Neither Google nor FinTitans utilizes your private email or SMS excerpts to train general consumer AI models."
+            ]
+          },
+          {
+            title: "Revoking permissions",
+            paragraphs: [
+              "You can revoke Gmail access at any moment via your <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\" rel=\"noopener\">Google Account Security page</a>.",
+              "You can revoke SMS permissions at any moment by setting any other messaging app as your default SMS handler in Android Settings → Apps → Default Apps."
+            ]
+          }
+        ]
+      },
+      {
+        id: "deletion",
+        label: "Deletion",
+        fullLabel: "Account Deletion Policy",
+        subtitle: "Complete instructions on permanently deleting your account, stored budgets, and revoking permissions",
+        intro: [
+          "Effective 25 October 2026 · Data Minimization & Privacy",
+          "FinSmart believes that your data belongs entirely to you. You maintain the right to permanently purge your account and delete all associated information at any time without penalty."
+        ],
+        summary: {
+          title: "Immediate Self-Service",
+          bullets: [
+            "Inside the FinSmart mobile app, go to Profile → Delete account.",
+            "All cloud budgets, category configurations, spending history, and token logs are immediately erased from Cloud Firestore.",
+            "All local device caches (chats, emails, preferences) are deleted on your device.",
+            "You can also email REPLACE_WITH_YOUR_EMAIL if you have already uninstalled the app."
+          ]
+        },
+        sections: [
+          {
+            title: "Step-by-step in-app deletion",
+            paragraphs: [
+              "To delete your account immediately using the mobile app:",
+              "1. Open the FinSmart mobile application on your device.<br>2. Tap on your <strong>Profile</strong> tab in the navigation bar.<br>3. Scroll to the bottom and select <strong>Delete account</strong>.<br>4. Re-authenticate with your login provider (Google, Apple, or email) to confirm identity.<br>5. Confirm deletion."
+            ]
+          },
+          {
+            title: "What gets permanently erased",
+            paragraphs: [
+              "Executing account deletion triggers an automated cascade that destroys:",
+              "• Your user profile record and identifier in Firebase Authentication.<br>• All budget limits, spending records, transactions, and custom categories in Cloud Firestore.<br>• Your Smart Coach daily allowance and purchased token ledger.<br>• The on-device SQLite cache of Gmail headers and Smart Coach chat logs.<br>• OAuth token grants authorizing Gmail read access."
+            ]
+          },
+          {
+            title: "Manual deletion requests",
+            paragraphs: [
+              "If you have already removed the FinSmart application from your device and cannot reinstall it, you may submit a manual deletion request by sending an email from your registered address to <a href=\"mailto:REPLACE_WITH_YOUR_EMAIL\">REPLACE_WITH_YOUR_EMAIL</a> with the subject line <code>Account Deletion Request</code>.",
+              "Our operations team will verify account ownership and execute the complete purge within 7 business days, followed by a written confirmation of completion."
+            ]
+          },
+          {
+            title: "Statutory retention",
+            paragraphs: [
+              "FinTitans does not retain any financial information after deletion. Basic anonymized server logs (such as HTTP response code telemetry) may be retained for up to 30 days purely for network diagnostics before automated rotation."
+            ]
+          }
+        ]
+      }
+    ];
+
+    // State & Routing
+    function getActiveDocId() {
+      const hash = window.location.hash.replace(/^#/, "");
+      const found = DOCUMENTS.find(d => d.id === hash);
+      return found ? found.id : DOCUMENTS[0].id;
+    }
+
+    function renderNav(activeId) {
+      const totalDocs = String(DOCUMENTS.length).padStart(2, "0");
+
+      // Sidebar
+      const sidebarContainer = document.getElementById("sidebar-nav");
+      sidebarContainer.innerHTML = DOCUMENTS.map((doc, idx) => {
+        const num = String(idx + 1).padStart(2, "0");
+        const isActive = doc.id === activeId;
+        return `
+          <button type="button" class="sidebar-item ${isActive ? 'is-active' : ''}" data-id="${doc.id}">
+            <span class="sidebar-num">${num}</span>
+            <span>${doc.fullLabel}</span>
+          </button>
+        `;
+      }).join("");
+
+      // Mobile Tabs
+      const tabContainer = document.getElementById("tab-nav");
+      tabContainer.innerHTML = DOCUMENTS.map((doc, idx) => {
+        const num = String(idx + 1).padStart(2, "0");
+        const isActive = doc.id === activeId;
+        return `
+          <button type="button" class="doc-tab ${isActive ? 'is-active' : ''}" data-id="${doc.id}">
+            <span class="doc-tab-num">${num}</span>
+            ${doc.label}
+          </button>
+        `;
+      }).join("");
+
+      // Attach event listeners
+      document.querySelectorAll("[data-id]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const targetId = btn.getAttribute("data-id");
+          if (targetId && targetId !== window.location.hash.replace(/^#/, "")) {
+            window.location.hash = targetId;
+          }
+        });
+      });
+    }
+
+    function renderDoc(activeId) {
+      const activeIdx = DOCUMENTS.findIndex(d => d.id === activeId);
+      const doc = DOCUMENTS[activeIdx];
+      const totalDocs = String(DOCUMENTS.length).padStart(2, "0");
+      const currentDocNum = String(activeIdx + 1).padStart(2, "0");
+
+      // Update Masthead
+      document.getElementById("doc-kicker").textContent = `Document ${currentDocNum} of ${totalDocs}`;
+      document.getElementById("doc-title").textContent = doc.fullLabel;
+      document.getElementById("doc-subtitle").textContent = doc.subtitle;
+      document.title = `${doc.fullLabel} | FinSmart Legal`;
+
+      // Update Document Content
+      const container = document.getElementById("doc-content");
+      let html = "";
+
+      // Intro
+      if (doc.intro && doc.intro.length) {
+        doc.intro.forEach(p => {
+          html += `<p class="doc-intro">${p}</p>`;
+        });
+      }
+
+      // Summary
+      if (doc.summary) {
+        html += `
+          <div class="doc-summary">
+            <p class="doc-summary-title">${doc.summary.title}</p>
+            <ul>
+              ${doc.summary.bullets.map(b => `<li>${b}</li>`).join("")}
+            </ul>
+          </div>
+        `;
+      }
+
+      // Sections
+      const totalSec = String(doc.sections.length).padStart(2, "0");
+      doc.sections.forEach((sec, idx) => {
+        const secNum = String(idx + 1).padStart(2, "0");
+        html += `
+          <section class="doc-section" id="${doc.id}-${secNum}">
+            <p class="doc-section-num">${secNum} / ${totalSec}</p>
+            <h2 class="doc-section-title">${sec.title}</h2>
+        `;
+
+        if (sec.paragraphs) {
+          sec.paragraphs.forEach(p => {
+            html += `<p class="doc-paragraph">${p}</p>`;
+          });
+        }
+
+        if (sec.table) {
+          html += `
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    ${sec.table.headers.map(h => `<th>${h}</th>`).join("")}
+                  </tr>
+                </thead>
+                <tbody>
+                  ${sec.table.rows.map(row => `
+                    <tr>
+                      ${row.map(cell => `<td>${cell}</td>`).join("")}
+                    </tr>
+                  `).join("")}
+                </tbody>
+              </table>
+            </div>
+          `;
+        }
+
+        if (sec.notes) {
+          html += `<p class="doc-paragraph">${sec.notes}</p>`;
+        }
+
+        if (sec.bulletsTitle) {
+          html += `<p class="doc-paragraph"><strong>${sec.bulletsTitle}</strong></p>`;
+        }
+
+        if (sec.bullets) {
+          html += `
+            <ul class="doc-list">
+              ${sec.bullets.map(b => `<li>${b}</li>`).join("")}
+            </ul>
+          `;
+        }
+
+        if (sec.subbulletsTitle) {
+          html += `<p class="doc-paragraph"><strong>${sec.subbulletsTitle}</strong></p>`;
+        }
+
+        if (sec.subbullets) {
+          html += `
+            <ul class="doc-list">
+              ${sec.subbullets.map(b => `<li>${b}</li>`).join("")}
+            </ul>
+          `;
+        }
+
+        if (sec.footerParagraph) {
+          html += `<p class="doc-paragraph">${sec.footerParagraph}</p>`;
+        }
+
+        html += `</section>`;
+      });
+
+      container.innerHTML = html;
+
+      // Pager
+      const prevDoc = DOCUMENTS[activeIdx - 1];
+      const nextDoc = DOCUMENTS[activeIdx + 1];
+      const pagerContainer = document.getElementById("pager-nav");
+
+      pagerContainer.innerHTML = `
+        ${prevDoc ? `
+          <button type="button" class="pager-link" data-id="${prevDoc.id}">
+            <span class="pager-label">← Previous</span>
+            <span class="pager-title">${prevDoc.fullLabel}</span>
+          </button>
+        ` : `<span></span>`}
+
+        ${nextDoc ? `
+          <button type="button" class="pager-link pager-next" data-id="${nextDoc.id}">
+            <span class="pager-label">Next →</span>
+            <span class="pager-title">${nextDoc.fullLabel}</span>
+          </button>
+        ` : `<span></span>`}
+      `;
+
+      // Attach pager listeners
+      pagerContainer.querySelectorAll("[data-id]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const targetId = btn.getAttribute("data-id");
+          if (targetId) {
+            window.location.hash = targetId;
+          }
+        });
+      });
+    }
+
+    function syncState() {
+      const activeId = getActiveDocId();
+      renderNav(activeId);
+      renderDoc(activeId);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    window.addEventListener("hashchange", syncState);
+    window.addEventListener("DOMContentLoaded", () => {
+      syncState();
+    });
+  </script>
+</body>
+</html>
